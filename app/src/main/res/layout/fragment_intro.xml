@@ -1,14 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/_15sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Registration.Intro.IntroFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/logo"
+        android:layout_marginTop="@dimen/_15sdp"/>
+    <include
+        android:id="@+id/slider"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
-</FrameLayout>
+        android:layout_height="0dp"
+        layout="@layout/include_slider"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/get_started"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_30sdp"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/get_started"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="@dimen/_7sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:fontFamily="@font/aller_bold"
+        android:textSize="@dimen/_12ssp"
+        android:textAllCaps="false"
+        android:text="@string/lets_get_started"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

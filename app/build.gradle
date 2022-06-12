@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id "androidx.navigation.safeargs"
 }
 
 android {
@@ -53,4 +54,7 @@ dependencies {
 
     //Multidex
     implementation "androidx.multidex:multidex:2.0.1"
+
+    //Facebook Auth
+    implementation 'com.facebook.android:facebook-login:13.1.0'
 }

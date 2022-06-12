@@ -1,4 +1,4 @@
-package com.hudhud.megalot.Registration.Intro;
+package com.hudhud.megalot.Registration.SignIn;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,18 +12,21 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.google.android.material.button.MaterialButton;
 import com.hudhud.megalot.R;
+import com.hudhud.megalot.Registration.Intro.IntroFragmentDirections;
 import com.hudhud.megalot.Registration.RegistrationActivity;
 
-public class IntroFragment extends Fragment {
+public class SignInFragment extends Fragment {
 
     NavController navController;
     RegistrationActivity registrationActivity;
-    MaterialButton getStarted;
+    MaterialButton signIn;
+    TextView signUp;
 
-    public IntroFragment() {
+    public SignInFragment() {
         // Required empty public constructor
     }
 
@@ -37,7 +40,7 @@ public class IntroFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_intro, container, false);
+        return inflater.inflate(R.layout.fragment_sign_in, container, false);
     }
 
     @Override
@@ -57,10 +60,11 @@ public class IntroFragment extends Fragment {
 
     private void initViews(View view){
         navController = Navigation.findNavController(view);
-        getStarted = view.findViewById(R.id.get_started);
+        signIn = view.findViewById(R.id.sign_in);
+        signUp = view.findViewById(R.id.sign_up);
     }
 
     private void onClick(){
-        getStarted.setOnClickListener(view -> navController.navigate(IntroFragmentDirections.actionIntroFragmentToSignInFragment()));
+        signUp.setOnClickListener(view -> navController.navigate(SignInFragmentDirections.actionSignInFragmentToSignUpFragment()));
     }
 }
