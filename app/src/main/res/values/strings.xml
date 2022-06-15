@@ -43,4 +43,5 @@
     <string name="my_balance">My Balance</string>
     <string name="minimum_withdrawal_amount_is">Minimum withdrawal amount is</string>
     <string name="withdrawal">Withdrawal</string>
+    <string name="winning_numbers_">Winning Numbers</string>
 </resources>
