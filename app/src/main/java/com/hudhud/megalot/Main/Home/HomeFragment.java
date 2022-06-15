@@ -1,7 +1,6 @@
-package com.hudhud.megalot.Registration.SignIn;
+package com.hudhud.megalot.Main.Home;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,22 +12,18 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.google.android.material.button.MaterialButton;
 import com.hudhud.megalot.Main.MainActivity;
 import com.hudhud.megalot.R;
-import com.hudhud.megalot.Registration.Intro.IntroFragmentDirections;
-import com.hudhud.megalot.Registration.RegistrationActivity;
 
-public class SignInFragment extends Fragment {
+public class HomeFragment extends Fragment {
 
     NavController navController;
-    RegistrationActivity registrationActivity;
-    MaterialButton signIn;
-    TextView signUp;
+    MainActivity mainActivity;
+    MaterialButton withdrawBtn;
 
-    public SignInFragment() {
+    public HomeFragment() {
         // Required empty public constructor
     }
 
@@ -42,14 +37,14 @@ public class SignInFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sign_in, container, false);
+        return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-        if (context instanceof RegistrationActivity) {
-            registrationActivity = (RegistrationActivity) context;
+        if (context instanceof MainActivity) {
+            mainActivity = (MainActivity) context;
         }
     }
 
@@ -62,16 +57,14 @@ public class SignInFragment extends Fragment {
 
     private void initViews(View view){
         navController = Navigation.findNavController(view);
-        signIn = view.findViewById(R.id.sign_in);
-        signUp = view.findViewById(R.id.sign_up);
+        withdrawBtn = view.findViewById(R.id.withdraw);
     }
 
     private void onClick(){
-        signIn.setOnClickListener(view -> {
-            Intent mainIntent = new Intent(registrationActivity, MainActivity.class);
-            startActivity(mainIntent);
-            registrationActivity.finish();
+        withdrawBtn.setOnClickListener(view -> {
+            WithdrawBottomSheetDialogFragment withdrawBottomSheetDialogFragment = new WithdrawBottomSheetDialogFragment();
+            withdrawBottomSheetDialogFragment.show(getChildFragmentManager(),
+                    "withdraw_dialog_fragment");
         });
-        signUp.setOnClickListener(view -> navController.navigate(SignInFragmentDirections.actionSignInFragmentToSignUpFragment()));
     }
 }

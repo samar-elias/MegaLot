@@ -1,8 +1,10 @@
-package com.hudhud.megalot;
+package com.hudhud.megalot.Main;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.hudhud.megalot.R;
 
 public class MainActivity extends AppCompatActivity {
 
