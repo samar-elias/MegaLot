@@ -6,7 +6,7 @@
     android:background="@color/white"
     android:padding="@dimen/_15sdp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Registration.Intro.IntroFragment">
+    tools:context=".Views.Registration.Intro.IntroFragment">
 
     <ImageView
         android:id="@+id/logo"

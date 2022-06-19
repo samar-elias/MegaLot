@@ -5,7 +5,7 @@
         android:title="@string/home"
         android:icon="@drawable/house" />
     <item
-        android:id="@+id/notificationsFragment"
+        android:id="@+id/notificationFragment"
         android:title="@string/notification"
         android:icon="@drawable/notification"/>
     <item

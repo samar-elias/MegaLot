@@ -7,7 +7,58 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.hudhud.megalot.Main.Home.HomeFragment"
+        android:name="com.hudhud.megalot.Views.Main.Home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_previousWinsFragment"
+            app:destination="@id/previousWinsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_drawResultsFragment"
+            app:destination="@id/drawResultsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_myTicketsFragment2"
+            app:destination="@id/myTicketsFragment2" />
+        <action
+            android:id="@+id/action_homeFragment_to_myWithdrawalsFragment"
+            app:destination="@id/myWithdrawalsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/previousWinsFragment"
+        android:name="com.hudhud.megalot.Views.Main.Home.PreviousWins.PreviousWinsFragment"
+        android:label="fragment_previous_wins"
+        tools:layout="@layout/fragment_previous_wins" >
+        <action
+            android:id="@+id/action_previousWinsFragment_to_myTicketsFragment"
+            app:destination="@id/myTicketsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myTicketsFragment"
+        android:name="com.hudhud.megalot.Views.Main.Home.MyTickets.MyTicketFragment"
+        android:label="fragment_my_tickets"
+        tools:layout="@layout/fragment_my_tickets" />
+    <fragment
+        android:id="@+id/drawResultsFragment"
+        android:name="com.hudhud.megalot.Views.Main.Home.DrawResults.DrawResultsFragment"
+        android:label="fragment_draw_results"
+        tools:layout="@layout/fragment_draw_results" >
+        <action
+            android:id="@+id/action_drawResultsFragment_to_myTicketsFragment"
+            app:destination="@id/myTicketsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myTicketsFragment2"
+        android:name="com.hudhud.megalot.Views.Main.Home.MyTickets.MyTicketsFragment"
+        android:label="fragment_my_tickets2"
+        tools:layout="@layout/fragment_my_tickets2" />
+    <fragment
+        android:id="@+id/myWithdrawalsFragment"
+        android:name="com.hudhud.megalot.Views.Main.Home.MyWithdrawals.MyWithdrawalsFragment"
+        android:label="fragment_my_withdrawals"
+        tools:layout="@layout/fragment_my_withdrawals" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.hudhud.megalot.Views.Main.Notifications.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
 </navigation>

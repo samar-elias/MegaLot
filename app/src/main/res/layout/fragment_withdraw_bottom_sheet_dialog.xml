@@ -9,7 +9,7 @@
     android:padding="@dimen/_20sdp"
     android:background="@drawable/radius_top_white"
     android:orientation="vertical"
-    tools:context=".Main.Home.WithdrawBottomSheetDialogFragment">
+    tools:context=".Views.Main.Home.WithdrawBottomSheetDialogFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

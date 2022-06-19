@@ -7,7 +7,8 @@
     <ImageView
         android:id="@+id/slider_img"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_170sdp" />
+        android:layout_height="@dimen/_220sdp"
+        android:src="@drawable/logo"/>
     <TextView
         android:id="@+id/slider_title"
         android:layout_width="wrap_content"
@@ -15,7 +16,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/_15sdp"
         android:text="@string/sign_in"
-        android:textSize="@dimen/_20ssp"
+        android:textSize="@dimen/_17ssp"
         android:fontFamily="@font/aller_bold"
         android:textColor="@color/dark_green"/>
     <TextView
@@ -26,7 +27,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/_15sdp"
         android:text="@string/sign_in"
-        android:textSize="@dimen/_15ssp"
+        android:textSize="@dimen/_13ssp"
         android:fontFamily="@font/aller_regular"
-        android:textColor="@color/dark_green"/>
+        android:textColor="@color/dark_gray"/>
 </androidx.appcompat.widget.LinearLayoutCompat>
