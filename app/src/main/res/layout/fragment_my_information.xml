@@ -16,6 +16,7 @@
         android:paddingTop="@dimen/_15sdp"
         android:paddingBottom="@dimen/_15sdp">
         <ImageView
+            android:id="@+id/navigate_back"
             android:layout_width="@dimen/_25sdp"
             android:layout_height="@dimen/_20sdp"
             app:layout_constraintTop_toTopOf="parent"
@@ -64,6 +65,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <TextView
+                android:id="@+id/change_picture"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -96,6 +98,8 @@
                     android:background="@color/white"
                     android:padding="@dimen/_10ssp"
                     android:inputType="text"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/dark_green"
                     android:imeOptions="actionNext"
                     android:hint="@string/username"
                     android:fontFamily="@font/aller_regular"
@@ -105,7 +109,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/email_address"
+                android:text="@string/phone_number"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:fontFamily="@font/aller_bold"
                 android:textColor="@color/dark_green"
@@ -120,14 +124,16 @@
                 app:cardElevation="@dimen/_5sdp"
                 app:cardCornerRadius="@dimen/_5sdp">
                 <EditText
-                    android:id="@+id/email_address_edt"
+                    android:id="@+id/phone_edt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
                     android:padding="@dimen/_10ssp"
-                    android:inputType="textEmailAddress"
+                    android:inputType="phone"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/dark_green"
                     android:imeOptions="actionNext"
-                    android:hint="@string/email_address"
+                    android:hint="@string/phone_number"
                     android:fontFamily="@font/aller_regular"
                     android:textSize="@dimen/_9ssp"/>
             </com.google.android.material.card.MaterialCardView>
@@ -149,14 +155,14 @@
                 android:layout_marginEnd="@dimen/_5sdp"
                 app:cardElevation="@dimen/_5sdp"
                 app:cardCornerRadius="@dimen/_5sdp">
-                <EditText
-                    android:id="@+id/dob_edt"
+                <TextView
+                    android:id="@+id/birth_date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
                     android:padding="@dimen/_10ssp"
-                    android:inputType="text"
-                    android:imeOptions="actionNext"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/dark_green"
                     android:hint="@string/date_of_birth"
                     android:fontFamily="@font/aller_regular"
                     android:textSize="@dimen/_9ssp"/>
@@ -188,6 +194,8 @@
                     android:inputType="text"
                     android:imeOptions="actionNext"
                     android:hint="@string/country"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/dark_green"
                     android:fontFamily="@font/aller_regular"
                     android:textSize="@dimen/_9ssp"/>
             </com.google.android.material.card.MaterialCardView>
@@ -195,25 +203,32 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/phone_number"
+                android:text="@string/email_address"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:fontFamily="@font/aller_bold"
                 android:textColor="@color/dark_green"
                 android:textSize="@dimen/_9ssp"
                 android:layout_marginStart="@dimen/_12sdp"/>
-            <com.google.android.material.button.MaterialButton
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_5sdp"
                 android:layout_marginStart="@dimen/_5sdp"
                 android:layout_marginEnd="@dimen/_5sdp"
-                app:backgroundTint="@color/green"
-                android:text="@string/change_phone_number"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:fontFamily="@font/aller_bold"
-                android:textSize="@dimen/_10ssp"
-                app:cornerRadius="@dimen/_5sdp"/>
+                app:cardElevation="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+                <TextView
+                    android:id="@+id/email_address_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="@dimen/_10ssp"
+                    android:hint="@string/email_address"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/dark_green"
+                    android:fontFamily="@font/aller_regular"
+                    android:textSize="@dimen/_9ssp"/>
+            </com.google.android.material.card.MaterialCardView>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -225,6 +240,7 @@
                 android:textSize="@dimen/_9ssp"
                 android:layout_marginStart="@dimen/_12sdp"/>
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/change_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_5sdp"
@@ -239,6 +255,7 @@
                 app:cornerRadius="@dimen/_5sdp"/>
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/update_information"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_20sdp"

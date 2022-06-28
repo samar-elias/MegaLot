@@ -1,0 +1,127 @@
+{
+  "project_info": {
+    "project_number": "587116366092",
+    "firebase_url": "https://corona-virus-21870.firebaseio.com",
+    "project_id": "corona-virus-21870",
+    "storage_bucket": "corona-virus-21870.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587116366092:android:e400fed3b4bd32b3e36129",
+        "android_client_info": {
+          "package_name": "com.hudhud.corona"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587116366092-c01hv8cac1nt7ikke66o3b9a5rqgavub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM9EpARssWilBqBS85sc92hTaJJwm80dk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587116366092-c01hv8cac1nt7ikke66o3b9a5rqgavub.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "587116366092-84vo2k9nrjvhb7rio9champci3q2nse3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hudhudit.hsalati"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587116366092:android:e353f05d226c711fe36129",
+        "android_client_info": {
+          "package_name": "com.hudhud.megalot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587116366092-9tp3nol6hjtku89v3fk01vqpf1r7u896.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hudhud.megalot",
+            "certificate_hash": "b44278d43d4404365cbf69dea4bd83794b33ce04"
+          }
+        },
+        {
+          "client_id": "587116366092-c01hv8cac1nt7ikke66o3b9a5rqgavub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM9EpARssWilBqBS85sc92hTaJJwm80dk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587116366092-c01hv8cac1nt7ikke66o3b9a5rqgavub.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "587116366092-84vo2k9nrjvhb7rio9champci3q2nse3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hudhudit.hsalati"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587116366092:android:c2fc800ebfd0aa80e36129",
+        "android_client_info": {
+          "package_name": "com.hudhud.slamtak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587116366092-c01hv8cac1nt7ikke66o3b9a5rqgavub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM9EpARssWilBqBS85sc92hTaJJwm80dk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587116366092-c01hv8cac1nt7ikke66o3b9a5rqgavub.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "587116366092-84vo2k9nrjvhb7rio9champci3q2nse3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hudhudit.hsalati"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -7,7 +7,7 @@
     android:layout_marginStart="@dimen/_5sdp"
     android:layout_marginEnd="@dimen/_5sdp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/radius_top_white"
+    android:background="@drawable/radius_top_off_white"
     android:orientation="vertical"
     tools:context=".Views.Main.Account.FAQs.FAQsBottomSheetDialogFragment">
 
@@ -29,6 +29,7 @@
             android:textSize="@dimen/_15ssp" />
 
         <ImageView
+            android:id="@+id/close"
             android:layout_width="@dimen/_15sdp"
             android:layout_height="@dimen/_15sdp"
             app:layout_constraintTop_toTopOf="parent"
@@ -37,8 +38,10 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/faq_RV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_10sdp"/>
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

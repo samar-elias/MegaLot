@@ -36,7 +36,11 @@
         android:id="@+id/myTicketsFragment"
         android:name="com.hudhud.megalot.Views.Main.Home.MyTickets.MyTicketFragment"
         android:label="fragment_my_tickets"
-        tools:layout="@layout/fragment_my_tickets" />
+        tools:layout="@layout/fragment_my_tickets" >
+        <argument
+            android:name="drawId"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/drawResultsFragment"
         android:name="com.hudhud.megalot.Views.Main.Home.DrawResults.DrawResultsFragment"
@@ -45,6 +49,9 @@
         <action
             android:id="@+id/action_drawResultsFragment_to_myTicketsFragment"
             app:destination="@id/myTicketsFragment" />
+        <argument
+            android:name="id"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/myTicketsFragment2"
@@ -61,4 +68,18 @@
         android:name="com.hudhud.megalot.Views.Main.Notifications.NotificationFragment"
         android:label="fragment_notification"
         tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/accountFragment2"
+        android:name="com.hudhud.megalot.Views.Main.Account.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_accountFragment2_to_myInformationFragment"
+            app:destination="@id/myInformationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myInformationFragment"
+        android:name="com.hudhud.megalot.Views.Main.Account.MyInformation.MyInformationFragment"
+        android:label="fragment_my_information"
+        tools:layout="@layout/fragment_my_information" />
 </navigation>

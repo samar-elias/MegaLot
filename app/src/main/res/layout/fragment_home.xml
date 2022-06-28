@@ -47,7 +47,7 @@
                     app:layout_constraintTop_toBottomOf="@id/logo"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    android:text="Welcome Name"
+                    android:text="@string/welcome"
                     android:fontFamily="@font/aller_bold"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_17ssp"/>
@@ -486,7 +486,7 @@
                             app:layout_constraintTop_toBottomOf="@id/prize_layout"
                             app:layout_constraintStart_toStartOf="parent"
                             android:layout_marginStart="@dimen/_15sdp"
-                            android:text="Winning Numbers: 05/06/2022"
+                            android:text="@string/winning_numbers"
                             android:textColor="@color/white"
                             android:fontFamily="@font/aller_regular"
                             android:textSize="@dimen/_8ssp"/>
@@ -501,6 +501,7 @@
                             android:layout_marginTop="@dimen/_7sdp"
                             android:layout_marginStart="@dimen/_15sdp">
                             <TextView
+                                android:id="@+id/no1"
                                 android:layout_width="@dimen/_25sdp"
                                 android:layout_height="@dimen/_25sdp"
                                 android:background="@drawable/white_circle"
@@ -511,6 +512,7 @@
                                 android:textColor="@color/dark_gray"
                                 android:layout_marginEnd="@dimen/_5sdp"/>
                             <TextView
+                                android:id="@+id/no2"
                                 android:layout_width="@dimen/_25sdp"
                                 android:layout_height="@dimen/_25sdp"
                                 android:background="@drawable/white_circle"
@@ -521,6 +523,7 @@
                                 android:textColor="@color/dark_gray"
                                 android:layout_marginEnd="@dimen/_5sdp"/>
                             <TextView
+                                android:id="@+id/no3"
                                 android:layout_width="@dimen/_25sdp"
                                 android:layout_height="@dimen/_25sdp"
                                 android:background="@drawable/white_circle"
@@ -531,6 +534,7 @@
                                 android:textColor="@color/dark_gray"
                                 android:layout_marginEnd="@dimen/_5sdp"/>
                             <TextView
+                                android:id="@+id/no4"
                                 android:layout_width="@dimen/_25sdp"
                                 android:layout_height="@dimen/_25sdp"
                                 android:background="@drawable/white_circle"
@@ -541,6 +545,7 @@
                                 android:textColor="@color/dark_gray"
                                 android:layout_marginEnd="@dimen/_5sdp"/>
                             <TextView
+                                android:id="@+id/no5"
                                 android:layout_width="@dimen/_25sdp"
                                 android:layout_height="@dimen/_25sdp"
                                 android:background="@drawable/white_circle"
@@ -551,6 +556,7 @@
                                 android:textColor="@color/dark_gray"
                                 android:layout_marginEnd="@dimen/_5sdp"/>
                             <TextView
+                                android:id="@+id/no6"
                                 android:layout_width="@dimen/_25sdp"
                                 android:layout_height="@dimen/_25sdp"
                                 android:background="@drawable/orange_white_stroke_circle"

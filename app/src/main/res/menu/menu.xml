@@ -9,7 +9,7 @@
         android:title="@string/notification"
         android:icon="@drawable/notification"/>
     <item
-        android:id="@+id/accountFragment"
+        android:id="@+id/accountFragment2"
         android:title="@string/account"
         android:icon="@drawable/account"/>
 

@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_marginStart="@dimen/_5sdp"
     android:layout_marginEnd="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_10sdp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/radius_top_white"
     android:orientation="vertical"
@@ -17,6 +18,7 @@
         android:layout_marginStart="@dimen/_20sdp"
         android:layout_marginEnd="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_20sdp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -29,6 +31,7 @@
             android:textSize="@dimen/_15ssp" />
 
         <ImageView
+            android:id="@+id/close"
             android:layout_width="@dimen/_15sdp"
             android:layout_height="@dimen/_15sdp"
             app:layout_constraintTop_toTopOf="parent"
@@ -36,15 +39,16 @@
             android:src="@drawable/close"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/about_RV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_20sdp"
         android:layout_marginEnd="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:textColor="@color/green"
-        android:textSize="@dimen/_10ssp"
-        android:text="@string/about_us"
-        android:fontFamily="@font/aller_regular"/>
+        android:layout_marginTop="@dimen/_15sdp"
+        tools:listitem="@layout/bottom_item_layout"
+        tools:itemCount="7"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
