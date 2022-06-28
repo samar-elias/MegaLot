@@ -13,6 +13,7 @@
         android:layout_marginTop="@dimen/_7sdp"
         android:weightSum="6.5">
         <TextView
+            android:id="@+id/no1"
             android:layout_width="0dp"
             android:layout_height="@dimen/_35sdp"
             android:layout_weight="1"
@@ -28,6 +29,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.1"/>
         <TextView
+            android:id="@+id/no2"
             android:layout_width="0dp"
             android:layout_height="@dimen/_35sdp"
             android:layout_weight="1"
@@ -43,6 +45,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.1"/>
         <TextView
+            android:id="@+id/no3"
             android:layout_width="0dp"
             android:layout_height="@dimen/_35sdp"
             android:layout_weight="1"
@@ -58,6 +61,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.1"/>
         <TextView
+            android:id="@+id/no4"
             android:layout_width="0dp"
             android:layout_height="@dimen/_35sdp"
             android:layout_weight="1"
@@ -73,6 +77,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.1"/>
         <TextView
+            android:id="@+id/no5"
             android:layout_width="0dp"
             android:layout_height="@dimen/_35sdp"
             android:layout_weight="1"
@@ -88,6 +93,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.1"/>
         <TextView
+            android:id="@+id/no6"
             android:layout_width="0dp"
             android:layout_height="@dimen/_35sdp"
             android:layout_weight="1"
@@ -115,6 +121,7 @@
 
     </androidx.appcompat.widget.LinearLayoutCompat>
     <TextView
+        android:id="@+id/place"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/place"

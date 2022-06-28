@@ -53,6 +53,7 @@
             android:layout_marginStart="@dimen/_10sdp"
             android:orientation="vertical">
             <TextView
+                android:id="@+id/username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="First &amp; Last Name"
@@ -60,6 +61,7 @@
                 android:textSize="@dimen/_12ssp"
                 android:textColor="@color/dark_green"/>
             <TextView
+                android:id="@+id/phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0790000000"
@@ -69,6 +71,7 @@
                 android:textColor="@color/dark_green"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
         <ImageView
+            android:id="@+id/my_information"
             android:layout_width="@dimen/_20sdp"
             android:layout_height="@dimen/_20sdp"
             app:layout_constraintTop_toTopOf="parent"
@@ -107,9 +110,9 @@
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintBottom_toBottomOf="@id/header_layout"
                             android:src="@drawable/header_shadow"
-                            android:scaleType="fitXY"/>
+                            android:scaleType="centerCrop"/>
                         <androidx.appcompat.widget.LinearLayoutCompat
                             android:id="@+id/header_layout"
                             android:layout_width="match_parent"
@@ -124,12 +127,13 @@
                             <ImageView
                                 android:layout_width="@dimen/_100sdp"
                                 android:layout_height="@dimen/_20sdp"
-                                android:src="@drawable/logo3"/>
+                                android:src="@drawable/logo3"
+                                android:layout_marginTop="@dimen/_5sdp"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/bracket_level"
-                                android:textSize="@dimen/_10ssp"
+                                android:textSize="@dimen/_7ssp"
                                 android:textColor="@color/orange"
                                 android:fontFamily="@font/aller_regular"/>
                         </androidx.appcompat.widget.LinearLayoutCompat>
@@ -144,12 +148,228 @@
                             android:paddingBottom="@dimen/_5sdp"
                             android:gravity="center_horizontal"
                             android:orientation="vertical">
-                            <ProgressBar
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/your_bracket"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/aller_regular"
+                                android:textSize="@dimen/_7ssp"/>
+                            <TextView
+                                android:id="@+id/bracket_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bronze"
+                                android:textColor="@color/orange"
+                                android:fontFamily="@font/aller_bold"
+                                android:textSize="@dimen/_15ssp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/you_will_get_extra_tickets_for_each"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/aller_regular"
+                                android:textSize="@dimen/_7ssp"/>
+                            <androidx.appcompat.widget.LinearLayoutCompat
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                style="?android:attr/progressBarStyleHorizontal"
-                                android:layout_marginStart="@dimen/_10sdp"
-                                android:layout_marginEnd="@dimen/_10sdp"/>
+                                android:weightSum="3.1"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_10sdp">
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:gravity="center_vertical">
+                                    <ImageView
+                                        android:layout_width="@dimen/_25sdp"
+                                        android:layout_height="@dimen/_25sdp"
+                                        android:src="@drawable/pop_up_ticket"/>
+                                    <androidx.appcompat.widget.LinearLayoutCompat
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        android:layout_gravity="center_vertical">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/pop_up_ticket"
+                                            android:textSize="@dimen/_7ssp"
+                                            android:textColor="@color/white"
+                                            android:fontFamily="@font/aller_regular"/>
+                                        <androidx.appcompat.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <TextView
+                                                android:id="@+id/pop_up_ticket"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="+5"
+                                                android:textSize="@dimen/_15ssp"
+                                                android:textColor="@color/white"
+                                                android:fontFamily="@font/aller_bold"/>
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/tickets"
+                                                android:textSize="@dimen/_5ssp"
+                                                android:layout_marginStart="@dimen/_3sdp"
+                                                android:textColor="@color/white"
+                                                android:fontFamily="@font/aller_regular"/>
+                                        </androidx.appcompat.widget.LinearLayoutCompat>
+                                    </androidx.appcompat.widget.LinearLayoutCompat>
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.05"/>
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:gravity="center_vertical">
+                                    <ImageView
+                                        android:layout_width="@dimen/_25sdp"
+                                        android:layout_height="@dimen/_25sdp"
+                                        android:src="@drawable/youtube"/>
+                                    <androidx.appcompat.widget.LinearLayoutCompat
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        android:layout_gravity="center_vertical">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/youtube_view"
+                                            android:textSize="@dimen/_7ssp"
+                                            android:textColor="@color/white"
+                                            android:fontFamily="@font/aller_regular"/>
+                                        <androidx.appcompat.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <TextView
+                                                android:id="@+id/youtube_ticket"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="+10"
+                                                android:textSize="@dimen/_15ssp"
+                                                android:textColor="@color/white"
+                                                android:fontFamily="@font/aller_bold"/>
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/tickets"
+                                                android:textSize="@dimen/_5ssp"
+                                                android:layout_marginStart="@dimen/_3sdp"
+                                                android:textColor="@color/white"
+                                                android:fontFamily="@font/aller_regular"/>
+                                        </androidx.appcompat.widget.LinearLayoutCompat>
+                                    </androidx.appcompat.widget.LinearLayoutCompat>
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.05"/>
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:gravity="center_vertical">
+                                    <ImageView
+                                        android:layout_width="@dimen/_25sdp"
+                                        android:layout_height="@dimen/_25sdp"
+                                        android:src="@drawable/app_installment"/>
+                                    <androidx.appcompat.widget.LinearLayoutCompat
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        android:layout_gravity="center_vertical">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/app_installment"
+                                            android:textSize="@dimen/_7ssp"
+                                            android:textColor="@color/white"
+                                            android:fontFamily="@font/aller_regular"/>
+                                        <androidx.appcompat.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <TextView
+                                                android:id="@+id/install_ticket"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="+25"
+                                                android:textSize="@dimen/_15ssp"
+                                                android:textColor="@color/white"
+                                                android:fontFamily="@font/aller_bold"/>
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/tickets"
+                                                android:textSize="@dimen/_5ssp"
+                                                android:layout_marginStart="@dimen/_3sdp"
+                                                android:textColor="@color/white"
+                                                android:fontFamily="@font/aller_regular"/>
+                                        </androidx.appcompat.widget.LinearLayoutCompat>
+                                    </androidx.appcompat.widget.LinearLayoutCompat>
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp">
+                                <SeekBar
+                                    android:id="@+id/bracket_seek_bar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    android:progressTint="@color/orange"
+                                    android:progressDrawable="@drawable/progress_bar_green"
+                                    android:progress="50"
+                                    android:shape="oval"
+                                    style="@style/barStyle"
+                                    android:splitTrack="false"
+                                    android:thumbOffset="10dp"
+                                    android:thumb="@drawable/shape_thumb"/>
+                                <ImageView
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="@id/bracket_seek_bar"
+                                    android:src="@drawable/green_circle_with_border"
+                                    android:layout_marginEnd="@dimen/_10sdp"/>
+                                <TextView
+                                    android:id="@+id/start_points"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintTop_toBottomOf="@id/bracket_seek_bar"
+                                    app:layout_constraintStart_toStartOf="@id/bracket_seek_bar"
+                                    android:layout_marginStart="@dimen/_15sdp"
+                                    android:text="0"
+                                    android:textColor="@color/white"/>
+                                <TextView
+                                    android:id="@+id/end_points"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintTop_toBottomOf="@id/bracket_seek_bar"
+                                    app:layout_constraintEnd_toEndOf="@id/bracket_seek_bar"
+                                    android:layout_marginEnd="@dimen/_15sdp"
+                                    android:text="1000"
+                                    android:textColor="@color/white"/>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
                             <androidx.appcompat.widget.LinearLayoutCompat
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -163,9 +383,11 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Number of Watches"
+                                    android:text="@string/number_of_watches"
                                     android:textColor="@color/white"
                                     android:textSize="@dimen/_6ssp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_marginStart="@dimen/_5sdp"
                                     android:fontFamily="@font/aller_regular"/>
                                 <ImageView
                                     android:layout_width="wrap_content"
@@ -173,6 +395,7 @@
                                     android:src="@drawable/line_horizontal"/>
                             </androidx.appcompat.widget.LinearLayoutCompat>
                             <TextView
+                                android:id="@+id/user_card_count"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="@dimen/_15ssp"
@@ -292,8 +515,7 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/about_us"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_10sdp">
+                        android:layout_height="wrap_content">
                         <ImageView
                             android:id="@+id/about_us_icon"
                             android:layout_width="@dimen/_20sdp"
@@ -404,38 +626,42 @@
                 </androidx.appcompat.widget.LinearLayoutCompat>
             </com.google.android.material.card.MaterialCardView>
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_30sdp">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:background="@drawable/radius10_red"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/logout"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/logout"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/_15ssp"
+                        android:fontFamily="@font/aller_bold"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="@dimen/_7sdp"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.appcompat.widget.LinearLayoutCompat>
     </ScrollView>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:background="@drawable/radius10_red"
-            android:layout_marginStart="@dimen/_20sdp"
-            android:layout_marginEnd="@dimen/_20sdp"
-            android:padding="@dimen/_10sdp"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal">
-            <ImageView
-                android:layout_width="@dimen/_20sdp"
-                android:layout_height="@dimen/_20sdp"
-                android:src="@drawable/logout"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="@string/logout"
-                android:gravity="center_vertical"
-                android:textSize="@dimen/_15ssp"
-                android:fontFamily="@font/aller_bold"
-                android:textColor="@color/white"
-                android:layout_marginStart="@dimen/_7sdp"/>
-        </androidx.appcompat.widget.LinearLayoutCompat>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.appcompat.widget.LinearLayoutCompat>

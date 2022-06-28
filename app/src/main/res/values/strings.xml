@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">MegaLot</string>
+    <string name="google_client_id">587116366092–9tp3nol6hjtku89v3fk01vqpf1r7u896.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">507341267851813</string>
+    <string name="fb_login_protocol_scheme">fb507341267851813</string>
+    <string name="facebook_client_token">c2011fe3126537f03bc41e327cc09cf6</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="lets_get_started">Let\'s Get Started</string>
@@ -83,4 +87,34 @@
     <string name="change_language">Change Language</string>
     <string name="frequently_asked_questions">Frequently Asked Questions</string>
     <string name="internet_connection_error">Please check your internet connection and try again!</string>
+    <string name="fill_field">This field can\'t be empty</string>
+    <string name="wrong_email">Wrong email format!</string>
+    <string name="email_existed">Email address is already existed!</string>
+    <string name="update_information_successfully">Profile updated successfully!</string>
+    <string name="no_notifications">No Notifications</string>
+    <string name="log_out_desc">Are you sure you want to log out?</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_notification">Delete Notification</string>
+    <string name="notification_desc">Are you sure you want to delete this notification?</string>
+    <string name="delete">Delete</string>
+    <string name="bracket">Bracket</string>
+    <string name="your_bracket">Your Bracket</string>
+    <string name="you_will_get_extra_tickets_for_each">You will get extra tickets for each</string>
+    <string name="pop_up_ticket">Pop Up Ticket</string>
+    <string name="tickets">Tickets</string>
+    <string name="youtube_view">YouTube View</string>
+    <string name="app_installment">App Installment</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="change">Change</string>
+    <string name="current_password_wrong">Current password is wrong</string>
+    <string name="not_equal">Passwords don\'t match</string>
+    <string name="password_changed">Password changed successfully!</string>
+    <string name="number_of_watches">Number of Watches</string>
+    <string name="recommend_app">Let me recommend you this application</string>
+    <string name="google_signup_failed">Google sign up failed!</string>
+    <string name="withdraw_request">Your withdraw request has been received and you will be contacted soon!</string>
+    <string name="low_balance">Your current balance is not enough to complete the withdrawal process!</string>
+
 </resources>

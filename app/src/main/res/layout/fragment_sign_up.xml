@@ -121,7 +121,7 @@
                     android:background="@color/white"
                     android:padding="@dimen/_10ssp"
                     android:inputType="textEmailAddress"
-                    android:imeOptions="actionNext"
+                    android:imeOptions="actionDone"
                     android:hint="@string/email_address"
                     android:fontFamily="@font/aller_regular"
                     android:textSize="@dimen/_9ssp"/>
@@ -144,14 +144,12 @@
                 android:layout_marginEnd="@dimen/_5sdp"
                 app:cardElevation="@dimen/_5sdp"
                 app:cardCornerRadius="@dimen/_5sdp">
-                <EditText
-                    android:id="@+id/dob_edt"
+                <TextView
+                    android:id="@+id/dob"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
                     android:padding="@dimen/_10ssp"
-                    android:inputType="text"
-                    android:imeOptions="actionNext"
                     android:hint="@string/date_of_birth"
                     android:fontFamily="@font/aller_regular"
                     android:textSize="@dimen/_9ssp"/>
@@ -218,7 +216,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/sign_in"
+                android:id="@+id/sign_up"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_30sdp"
@@ -242,7 +240,7 @@
                     android:textSize="@dimen/_9ssp"
                     android:textColor="@color/dark_gray"/>
                 <TextView
-                    android:id="@+id/sign_up"
+                    android:id="@+id/sign_in"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_5sdp"
@@ -292,6 +290,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </com.google.android.material.card.MaterialCardView>
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/google_sign_up"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_5sdp"

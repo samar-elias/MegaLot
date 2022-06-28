@@ -29,6 +29,7 @@
             android:textSize="@dimen/_15ssp" />
 
         <ImageView
+            android:id="@+id/close"
             android:layout_width="@dimen/_15sdp"
             android:layout_height="@dimen/_15sdp"
             app:layout_constraintTop_toTopOf="parent"
@@ -36,15 +37,16 @@
             android:src="@drawable/close"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/terms_RV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_20sdp"
         android:layout_marginEnd="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:textColor="@color/green"
-        android:textSize="@dimen/_10ssp"
-        android:text="@string/terms_amp_conditions"
-        android:fontFamily="@font/aller_regular"/>
+        android:layout_marginTop="@dimen/_15sdp"
+        tools:listitem="@layout/bottom_item_layout"
+        tools:itemCount="7"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

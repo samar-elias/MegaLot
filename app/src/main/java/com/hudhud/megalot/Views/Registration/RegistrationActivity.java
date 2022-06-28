@@ -10,6 +10,7 @@ import android.widget.ProgressBar;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
+import com.google.firebase.FirebaseApp;
 import com.hudhud.megalot.R;
 
 public class RegistrationActivity extends AppCompatActivity {
@@ -20,6 +21,7 @@ public class RegistrationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FirebaseApp.initializeApp(this);
         setContentView(R.layout.activity_registration);
         initViews();
     }

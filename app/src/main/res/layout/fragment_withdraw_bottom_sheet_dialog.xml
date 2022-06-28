@@ -27,6 +27,7 @@
             android:textSize="@dimen/_17ssp" />
 
         <ImageView
+            android:id="@+id/close"
             android:layout_width="@dimen/_15sdp"
             android:layout_height="@dimen/_15sdp"
             app:layout_constraintTop_toTopOf="parent"
@@ -107,6 +108,7 @@
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <TextView
+        android:id="@+id/withdrawal_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_20sdp"

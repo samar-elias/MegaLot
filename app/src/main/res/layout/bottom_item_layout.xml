@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_us"
+        android:textColor="@color/dark_green"
+        android:fontFamily="@font/aller_bold"
+        android:textSize="@dimen/_13ssp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/green"
+        android:textSize="@dimen/_10ssp"
+        android:text="@string/about_us"
+        android:fontFamily="@font/aller_regular"
+        android:layout_marginBottom="@dimen/_15sdp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
